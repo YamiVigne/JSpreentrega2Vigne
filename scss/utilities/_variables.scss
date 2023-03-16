@@ -1,0 +1,36 @@
+h1 {
+	color: $secondary_color;
+	font-family: $typo-titles;
+	font-size: $typo-big;
+}
+h2 {
+	color: black;
+	font-family: $typo-titles;
+	text-align: center;
+	font-size: $typo-medium;
+}
+h3 {
+	color: $primary_color;
+	font-family: $typo-titles;
+	font-size: $typo-medium;
+	letter-spacing: 1.5pt;
+}
+h4 {
+	font-family: $typo-titles;
+	color: $secondary_color;
+	letter-spacing: 1.5pt;
+	text-align: start;
+	font-size: $typo-medium;
+}
+h5 {
+	color: black;
+	text-align: center;
+	font-family: $typo-general;
+}
+h6 {
+	font-family: $typo-general;
+	text-transform: uppercase;
+	letter-spacing: 3pt;
+	text-align: start;
+	font-size: 22px;
+}

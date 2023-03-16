@@ -1,0 +1,104 @@
+html {height: 100%;}
+body {
+  background-image: url('../images/Fondo.png');
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #eae1d4;
+
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1580px;
+  min-height: 140vh;
+  display: grid;
+}
+
+header {
+  grid-area: my-header;
+  color: black;
+  align-content: center;
+}
+
+nav {
+  grid-area: my-nav;
+  background-color: #7f201f;
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.7pt;
+  word-spacing: 0.2pt;
+  line-height: 1.2;
+  padding: 5px;
+  padding: 15px;
+}
+
+aside {
+  grid-area: my-aside;
+  background-color: #f08f05;
+  font-size: 14px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.7pt;
+  word-spacing: 0.2pt;
+  line-height: 1.2;
+  padding: 5px;
+  padding: 15px;
+}
+
+section {
+  grid-area: my-section;
+  background-color: #bfb1a8;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.1pt;
+  word-spacing: 0.2pt;
+  line-height: 1.4;
+  padding: 5px;
+  padding: 15px;
+}
+
+footer {
+  grid-area: my-footer;
+  background-color: #7f201f;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 100px 1fr 100px;
+    grid-template-areas: 
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-footer my-footer my-footer"
+  }
+}
+
+@media (min-width: 1001px) {
+  main {
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 401px 1fr 100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+}
+
+.card {
+  background: linear-gradient(to bottom left, #f1d0e2 40%, #80201f 100%);;
+  border-radius: 5px;
+  box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  .card_content {
+    padding: 16px;
+    background: linear-gradient(to bottom left, #f1d0e2 50%, #80201f 100%);
+  }
+}
