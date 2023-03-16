@@ -20,7 +20,7 @@ header {
 
 nav {
   grid-area: my-nav;
-  background-color: #7f201f;
+  background-color: #3ab3aa;
   font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 1.7pt;
@@ -53,7 +53,7 @@ section {
 
 footer {
   grid-area: my-footer;
-  background-color: #7f201f; }
+  background-color: #3ab3aa; }
 
 @media (min-width: 600px) and (max-width: 1000px) {
   main {
@@ -66,7 +66,7 @@ footer {
 
 @media (min-width: 1001px) {
   main {
-    grid-template-columns: 800px 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 401px 1fr 100px;
     grid-template-areas: "my-header my-header my-header"
  "my-nav my-section my-aside"
@@ -78,7 +78,7 @@ img {
   align-content: center; }
 
 .card {
-  background: linear-gradient(to bottom left, #f1d0e2 40%, #80201f 100%);
+  background: linear-gradient(to bottom left, #3ab3aa 40%, #a6c288 100%);
   border-radius: 5px;
   box-shadow: 6px 8px 2px 1px rgba(59, 21, 21, 0.336);
   display: flex;
@@ -86,7 +86,7 @@ img {
   overflow-x: hidden; }
   .card .card_content {
     padding: 16px;
-    background: linear-gradient(to bottom left, #f1d0e2 50%, #80201f 100%); }
+    background: linear-gradient(to bottom left, #3ab3aa 50%, #a6c288 100%); }
 
 h1 {
   color: #8e5572;
@@ -114,12 +114,12 @@ h4 {
 
 h5 {
   color: black;
-  text-align: center;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  font-size: 16pt; }
 
 h6 {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3pt;
+  letter-spacing: 2.5pt;
   text-align: start;
   font-size: 22px; }
