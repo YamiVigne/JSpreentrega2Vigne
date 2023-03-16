@@ -52,7 +52,7 @@ const perifericos = [
         marca: "Razer",
         modelo:"Razer x Pokémon",
         color: "Jigglypuff Purin Orochi V2",
-        precio: 59999,
+        precio: 42999,
         img: "./images/mouse1.png"
     }, 
     {
@@ -60,7 +60,7 @@ const perifericos = [
         marca: "Razer",
         modelo:"Razer x Pokémon",
         color: "Sylveon Orochi V2",
-        precio: 66999,
+        precio: 42999,
         img: "./images/mouse2.png"
     }, 
     {
@@ -68,7 +68,7 @@ const perifericos = [
         marca: "Razer",
         modelo:"Razer x Pokémon",
         color: "Eevee Orochi V2",
-        precio: 69999,
+        precio: 42999,
         img: "./images/mouse3.png"
     }
 ]
