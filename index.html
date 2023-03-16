@@ -22,7 +22,7 @@
 
 </head> 
 <body>
-  <div class="container py-3">
+
     <header>
       <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
@@ -43,53 +43,49 @@
         <h1 class="display-4 fw-normal"> Periféricos Center </h1>
         <p class="fs-5 text-muted"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam in tempore, earum adipisci et, temporibus quo quidem aperiam iusto iure atque nihil beatae veniam vel architecto? Corrupti omnis repellendus illum.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam pariatur quaerat sint cum officiis, modi quo fuga saepe aspernatur! Necessitatibus, dolor illo. Rem enim reiciendis similique optio deleniti officia dolores!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas eligendi, laborum laudantium accusamus eaque temporibus velit quaerat quibusdam exercitationem veniam quas esse quia reprehenderit? Consequuntur nihil veritatis laboriosam molestiae!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reprehenderit earum tempora pariatur vel qui tempore commodi ea temporibus obcaecati quibusdam a, non fuga sit molestias distinctio! Nulla, fugiat dolor!
         </p>
       </div>
     </header>
   
     <main>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <h3> Novedades en teclados mecánicos </h3>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal"> Teclado </h4>
-              <img src="./images/teclogi1.png"> 
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title"> $6999 </h1> <small class="text-muted fw-light"> efectivo/transferencia </small>
-                <h4 class="u-custom-font u-font-oswald u-text u-text-palette-1-base u-text-6">Logitech Pop Keys QWERTY </h4>
-                <h6 class="u-text u-text-7"><b style=""> color daydream </b></h6>
-                <p class="u-text u-text-default u-text-grey-50 u-text-8"> Tipo: mecánico, teclas antighosting, conector USB </p>
-              <button type="button" class="w-100 btn btn-lg btn-outline-secondary"> Comprar </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 rounded-3 shadow-sm">
-            <div class="card-header py-3">
-              <h4 class="my-0 fw-normal"> Teclado </h4>
-              <img src="./images/teclogi2.png"> 
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$ 6999 </h1> <small class="text-muted fw-light"> efectivo/transferencia </small>
-              <h4 class="u-custom-font u-font-oswald u-text u-text-palette-1-base u-text-6">Logitech Pop Keys QWERTY </h4>
-              <h6 class="u-text u-text-7"><b style=""> color heartbreaker </b></h6>
-              <p class="u-text u-text-default u-text-grey-50 u-text-8"> Tipo: mecánico, teclas antighosting, conector USB </p>
-              <button type="button" class="w-100 btn btn-lg btn-outline-secondary"> Comprar </button>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <h2 class="display-6 text-center mb-4"> Marcas </h2>
-      <ul> 
-        <li> HyperX </li>
-        <li> Logitech </li>
-        <li> Redragon </li>
-        <li> Razer </li>
-        <li> Corsair </li>
-    </ul>
+    <div id="divCelulares" class="container d-flex flex-wrap justify-content-between mt-4">
+    </div>
+    
+  <div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+              <thead>
+              <tr>
+                <th style="width:50%">Producto</th>
+                <th style="width:10%">Precio</th>
+                <th style="width:8%">Cantidad</th>
+                <th style="width:22%" class="text-center">Subtotal</th>
+                <th style="width:10%"></th>
+              </tr>
+            </thead>
+            <tbody id="tablaCarrito">
+             
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2" class="hidden-xs"></td>
+                <td class="hidden-xs text-center" id="totalCarrito"><strong>Total</strong></td>
+                <td><a href="#" class="btn btn-success btn-block">Comprar <i class="fa fa-angle-right"></i></a></td>
+                
+              </tr>
+            </tfoot>
+          </table>
+  </div>
+
+    <div id="divPerifericos" class="container d-flex flex-wrap justify-content-between mt-4">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.14/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <div class="container py-3">
+
+
     </main>
   
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
@@ -119,6 +115,7 @@
       </div>
     </footer>
   </div>
-    <script src="index.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/product.js"></script>
 </body>
 </html>
